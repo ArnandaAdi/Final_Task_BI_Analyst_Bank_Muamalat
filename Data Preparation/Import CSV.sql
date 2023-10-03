@@ -1,4 +1,4 @@
-CREATE TABLE customers(
+COPY customers(
 	CustomerID,
 	FirstName,
 	LastName,
@@ -13,7 +13,7 @@ FROM 'C:\Users\Arnanda\Documents\Data Science\Bank Muamalat\Customers.csv'
 DELIMITER ';'
 CSV HEADER;
 
-CREATE TABLE orders(
+COPY orders(
 	OrderID,
 	Date,
 	CustomerID,
@@ -24,7 +24,7 @@ FROM 'C:\Users\Arnanda\Documents\Data Science\Bank Muamalat\Orders.csv'
 DELIMITER ';'
 CSV HEADER;
 
-CREATE TABLE products(
+COPY products(
 	ProdNumber,
 	ProdName,
 	Category,
@@ -34,7 +34,7 @@ FROM 'C:\Users\Arnanda\Documents\Data Science\Bank Muamalat\Products.csv'
 DELIMITER ';'
 CSV HEADER;
 
-CREATE TABLE product_category(
+COPY product_category(
 	CategoryID,
 	CategoryName,
 	CategoryAbbreviation
